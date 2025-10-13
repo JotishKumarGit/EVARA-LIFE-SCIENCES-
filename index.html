@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8" />
-  <title>ESS ENTERPRIES</title>
+  <title>EVARA LIFE SCIENCES LLP - Home Page</title>
   <meta content="width=device-width, initial-scale=1.0" name="viewport" />
   <meta content="" name="keywords" />
   <meta content="" name="description" />
@@ -134,9 +134,52 @@
       margin-top: auto;
     }
   </style>
+
+  <style>
+    /* Mega dropdown styling for desktop */
+    @media (min-width: 992px) {
+      .mega-dropdown-wrapper {
+        position: static !important;
+      }
+
+      .mega-dropdown {
+        left: 50%;
+        transform: translateX(-50%);
+        width: 90%;
+        max-width: 1140px;
+        border-top: 1px solid #eee;
+        background-color: #fff;
+        position: absolute;
+        top: 100%;
+        z-index: 1000;
+        display: none;
+      }
+
+      .nav-item.dropdown:hover .mega-dropdown {
+        display: block;
+      }
+    }
+
+    /* On small screens (mobile), dropdown should behave normally */
+    @media (max-width: 991.98px) {
+      .mega-dropdown {
+        position: static !important;
+        transform: none !important;
+        width: 100% !important;
+        box-shadow: none !important;
+        display: block !important;
+        padding: 1rem 1.5rem;
+      }
+    }
+  </style>
+
+
+
+
 </head>
 
 <body>
+
   <!-- Spinner Start -->
   <div id="spinner"
     class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
@@ -147,12 +190,13 @@
   <!-- Spinner End -->
 
   <!-- Header -->
-  <!-- Topbar Start -->
+  <!-- Topbar (same as before) -->
   <div class="container-fluid bg-light p-0">
     <div class="row gx-0 d-none d-lg-flex">
       <div class="col-lg-7 px-5 text-start">
         <div class="h-100 d-inline-flex align-items-center me-4">
-          <small class="fa fa-envelope text-secondary me-2">essyesenterprises@gmail.com</small>
+          <small class="fa fa-envelope text-secondary me-2"></small>
+          <small>evaralifesciences@gmail.com</small>
         </div>
         <div class="h-100 d-inline-flex align-items-center">
           <small class="far fa-clock text-secondary me-2"></small>
@@ -162,13 +206,13 @@
       <div class="col-lg-5 px-5 text-end">
         <div class="h-100 d-inline-flex align-items-center me-4">
           <small class="fa fa-phone-alt text-secondary me-2"></small>
-          <small>+91 8042048479 | 98455 18383</small>
+          <small>+91 9289451501 || 9289451501</small>
         </div>
         <div class="h-100 d-inline-flex align-items-center">
-          <a class="btn btn-sm-square bg-white text-secondary me-1" href=""><i class="fab fa-facebook-f"></i></a>
-          <a class="btn btn-sm-square bg-white text-secondary me-1" href=""><i class="fab fa-twitter"></i></a>
-          <a class="btn btn-sm-square bg-white text-secondary me-1" href=""><i class="fab fa-linkedin-in"></i></a>
-          <a class="btn btn-sm-square bg-white text-secondary me-0" href=""><i class="fab fa-instagram"></i></a>
+          <a class="btn btn-sm-square bg-white text-secondary me-1" href="#"><i class="fab fa-facebook-f"></i></a>
+          <a class="btn btn-sm-square bg-white text-secondary me-1" href="#"><i class="fab fa-twitter"></i></a>
+          <a class="btn btn-sm-square bg-white text-secondary me-1" href="#"><i class="fab fa-linkedin-in"></i></a>
+          <a class="btn btn-sm-square bg-white text-secondary me-0" href="#"><i class="fab fa-instagram"></i></a>
         </div>
       </div>
     </div>
@@ -177,29 +221,72 @@
 
   <!-- Navbar Start -->
   <nav class="navbar navbar-expand-lg bg-white navbar-light shadow sticky-top p-0">
-    <a href="index.php" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
-      <h2 class="m-0 text-secondary"></i>ESS ENTERPRIES</h2>
+    <a href="index.html" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
+      <img src="img/evera_logo.png" alt="Evara Life Sciences" height="80">
     </a>
-    <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+    <button class="navbar-toggler me-4" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
       <span class="navbar-toggler-icon"></span>
     </button>
+
     <div class="collapse navbar-collapse" id="navbarCollapse">
       <div class="navbar-nav ms-auto p-4 p-lg-0">
         <a href="index.html" class="nav-item nav-link active">Home</a>
-        <a href="" class="nav-item nav-link">About</a>
-        <a href="" class="nav-item nav-link">Services</a>
-        <div class="nav-item dropdown">
+        <a href="about.html" class="nav-item nav-link">About</a>
+        <a href="services.html" class="nav-item nav-link">Services</a>
+
+        <!-- Mega Dropdown -->
+        <div class="nav-item dropdown mega-dropdown-wrapper">
           <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Products</a>
-          <div class="dropdown-menu fade-up m-0">
-            <a href="" class="dropdown-item">False Flooring</a>
-            <a href="" class="dropdown-item">Carpets</a>
-            <a href="" class="dropdown-item">Vinly Flooring</a>
+          <div class="dropdown-menu mega-dropdown">
+            <div class="container">
+              <div class="row g-4 py-4 justify-content-center">
+
+                <!-- Column 1 -->
+                <div class="col-lg-4 col-md-6">
+                  <h6 class="text-uppercase mb-3">Patent / Branded Medicines</h6>
+                  <ul class="list-unstyled">
+                    <li><a href="#" class="dropdown-item">Lipitor (Atorvastatin)</a></li>
+                    <li><a href="#" class="dropdown-item">Humira (Adalimumab)</a></li>
+                    <li><a href="#" class="dropdown-item">Keytruda (Pembrolizumab)</a></li>
+                    <li><a href="#" class="dropdown-item">Januvia (Sitagliptin)</a></li>
+                    <li><a href="#" class="dropdown-item">Entresto (Sacubitril/Valsartan)</a></li>
+                  </ul>
+                </div>
+
+                <!-- Column 2 -->
+                <div class="col-lg-4 col-md-6">
+                  <h6 class="text-uppercase mb-3">OTC Products</h6>
+                  <ul class="list-unstyled">
+                    <li><a href="#" class="dropdown-item">Panadol / Tylenol</a></li>
+                    <li><a href="#" class="dropdown-item">Vicks</a></li>
+                    <li><a href="#" class="dropdown-item">Centrum / Supradyn</a></li>
+                    <li><a href="#" class="dropdown-item">Vitamin C / D3 / Zinc</a></li>
+                    <li><a href="#" class="dropdown-item">ORS</a></li>
+                    <li><a href="#" class="dropdown-item">Nicotex / Nicorette</a></li>
+                  </ul>
+                </div>
+
+                <!-- Column 3 -->
+                <div class="col-lg-4 col-md-12">
+                  <h6 class="text-uppercase mb-3">General Healthcare Items</h6>
+                  <ul class="list-unstyled">
+                    <li><a href="#" class="dropdown-item">Thermometers</a></li>
+                    <li><a href="#" class="dropdown-item">First-aid Kits</a></li>
+                    <li><a href="#" class="dropdown-item">Bandages / Gauze / Cotton</a></li>
+                    <li><a href="#" class="dropdown-item">Sanitizers / Disinfectants</a></li>
+                    <li><a href="#" class="dropdown-item">Surgical Gloves / Face Masks</a></li>
+                    <li><a href="#" class="dropdown-item">BP Monitors / Glucometers</a></li>
+                  </ul>
+                </div>
+
+              </div>
+            </div>
           </div>
         </div>
-        <!-- <a href="contact.php" class="nav-item nav-link">Contact</a> -->
-        <a href="" class="nav-item nav-link">Contact</a>
-      </div>
+        <!-- End Mega Dropdown -->
 
+        <a href="contact.html" class="nav-item nav-link">Contact</a>
+      </div>
     </div>
   </nav>
   <!-- Navbar End -->
@@ -208,21 +295,24 @@
   <div class="container-fluid p-0 mb-5">
     <div id="header-carousel" class="carousel slide" data-bs-ride="carousel">
       <div class="carousel-inner">
+
+        <!-- Slide 1 -->
         <div class="carousel-item active">
-          <img class="w-100" src="img/carpet.jpg" height="600px" alt="Image" style="object-fit: cover" />
+          <img class="w-100" src="img/e_baner_1.jpeg" height="600px" alt="Image" style="object-fit: cover" />
           <div class="carousel-caption d-flex align-items-center">
             <div class="container">
               <div class="row align-items-center text-center justify-content-center">
                 <div class="col-10 col-lg-7 text-center text-lg-start">
                   <h3 class="text-white text-uppercase text-center mb-3 animated slideInDown">
-                    Carpet That Transforms Spaces
+                    Trusted Medical Supplies
                   </h3>
                   <h4 class="display-3 text-white mb-4 pb-3 animated text-center slideInDown">
-                    Elegant carpets perfect for every home and space.
+                    Quality equipment for clinics, hospitals, and professionals.
                   </h4>
                   <div class="justify-content-center text-center">
-                    <a href="" class="btn border text-white border-pill  text-secondary py-3 px-5 animated text-center slideInDown">
-                      Explore Collection<i class="fa fa-arrow-right ms-3"></i>
+                    <a href="#"
+                      class="btn border text-white border-pill text-secondary py-3 px-5 animated text-center slideInDown">
+                      Browse Products <i class="fa fa-arrow-right ms-3"></i>
                     </a>
                   </div>
                 </div>
@@ -231,44 +321,46 @@
           </div>
         </div>
 
+        <!-- Slide 2 -->
         <div class="carousel-item">
-          <img class="w-100" src="img/woodenfloor.jpg" height="600px" alt="Image" />
+          <img class="w-100" src="img/e_baner_2.jpeg" height="600px" alt="Image" />
           <div class="carousel-caption d-flex align-items-center">
             <div class="container">
               <div class="row align-items-center justify-content-center">
                 <div class="col-10 col-lg-7 text-center text-lg-start">
                   <h3 class="text-white text-center text-uppercase mb-3 animated slideInDown">
-                    Wooden Flooring
+                    Diagnostic Equipment
                   </h3>
                   <h4 class="display-3 text-center text-white mb-4 pb-3 animated slideInDown">
-                    Premium wooden flooring crafted for lasting style.
+                    Advanced tools for accurate health assessments.
                   </h4>
                   <div class="justify-content-center text-center">
-                    <a href="" class=" text-white btn border border-pill  text-secondary py-3 px-5 animated slideInDown">
-                      Explore Collection<i class="fa fa-arrow-right ms-3"></i>
+                    <a href="#" class="text-white btn border border-pill text-secondary py-3 px-5 animated slideInDown">
+                      Explore Devices <i class="fa fa-arrow-right ms-3"></i>
                     </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
 
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+        <!-- Slide 3 -->
         <div class="carousel-item">
-          <img class="w-100" src="img/falsefloor.jpg" height="600px" alt="Image" />
+          <img class="w-100" src="img/e_baner_3.jpeg" height="600px" alt="Image" />
           <div class="carousel-caption d-flex align-items-center">
             <div class="container">
               <div class="row align-items-center justify-content-center">
                 <div class="col-10 col-lg-7 text-center text-lg-start">
                   <h3 class="text-white text-center text-uppercase mb-3 animated slideInDown">
-                    False Flooring
+                    Hospital Furniture & Solutions
                   </h3>
                   <h4 class="display-3 text-center text-white mb-4 pb-3 animated slideInDown">
-                    Smart flooring solutions perfect for modern offices and homes.
+                    Ergonomic and durable furnishings for modern care spaces.
                   </h4>
                   <div class="justify-content-center text-center">
-                    <a href="" class=" text-white btn border border-pill  text-secondary py-3 px-5 animated slideInDown">
-                      Explore Collection<i class="fa fa-arrow-right ms-3"></i>
+                    <a href="#" class="text-white btn border border-pill text-secondary py-3 px-5 animated slideInDown">
+                      View Catalogue <i class="fa fa-arrow-right ms-3"></i>
                     </a>
                   </div>
                 </div>
@@ -276,8 +368,10 @@
             </div>
           </div>
         </div>
+
       </div>
 
+      <!-- Controls -->
       <button class="carousel-control-prev" type="button" data-bs-target="#header-carousel" data-bs-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Previous</span>
@@ -295,50 +389,49 @@
     <div class="container">
       <div class="row g-4">
 
-        <!-- Premium Wooden Flooring -->
+        <!-- Medical Equipment -->
         <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
           <div class="d-flex py-5 px-4">
-            <i class="fa fa-tree fa-3x text-secondary flex-shrink-0"></i>
+            <i class="fa fa-stethoscope fa-3x text-secondary flex-shrink-0"></i>
             <div class="ps-4">
-              <h5 class="mb-3">Premium Wooden Flooring</h5>
+              <h5 class="mb-3">Advanced Medical Equipment</h5>
               <p>
-                Elegant and durable wooden flooring that brings warmth, style, and timeless appeal to your interiors.
+                Reliable diagnostic and surgical tools designed to meet modern clinical needs with precision.
               </p>
               <a class="text-secondary border-bottom" href="">
-                Explore Flooring
+                Explore Equipment
               </a>
             </div>
           </div>
         </div>
 
-        <!-- False Ceiling & Carpets -->
+        <!-- Hospital Furniture -->
         <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
           <div class="d-flex bg-light py-5 px-4">
-            <i class="fa fa-border-style fa-3x text-secondary flex-shrink-0"></i>
+            <i class="fa fa-procedures fa-3x text-secondary flex-shrink-0"></i>
             <div class="ps-4">
-              <h5 class="mb-3">False Ceiling & Carpets</h5>
+              <h5 class="mb-3">Ergonomic Hospital Furniture</h5>
               <p>
-                Stylish false ceilings and premium carpets designed to enhance comfort, beauty, and functionality in
-                every space.
+                From patient beds to surgical tables — designed for comfort, durability, and hygiene.
               </p>
               <a class="text-secondary border-bottom" href="">
-                View Options
+                View Furniture
               </a>
             </div>
           </div>
         </div>
 
-        <!-- Vinyl Flooring Solutions -->
+        <!-- Healthcare Consumables -->
         <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
           <div class="d-flex py-5 px-4">
-            <i class="fa fa-th-large fa-3x text-secondary flex-shrink-0"></i>
+            <i class="fa fa-medkit fa-3x text-secondary flex-shrink-0"></i>
             <div class="ps-4">
-              <h5 class="mb-3">Vinyl Flooring Solutions</h5>
+              <h5 class="mb-3">Essential Healthcare Supplies</h5>
               <p>
-                Modern and affordable vinyl flooring — durable, stylish, and easy to maintain for homes and offices.
+                Daily-use medical consumables like gloves, masks, syringes, and more for clinics and hospitals.
               </p>
               <a class="text-secondary border-bottom" href="">
-                Discover Vinyl
+                Shop Supplies
               </a>
             </div>
           </div>
@@ -356,17 +449,8 @@
         <!-- Image Section -->
         <div class="col-lg-6 pt-4" style="min-height: 400px">
           <div class="position-relative h-100 wow fadeIn" data-wow-delay="0.1s">
-            <img class="position-absolute img-fluid w-100 h-100" src="img/about.jpg" style="object-fit: contain"
-              alt="Utkarsh Clothing" />
-            <!-- <div
-                class="position-absolute top-0 end-0 mt-n4 me-n4 py-4 px-5"
-                style="background: rgba(0, 0, 0, 0.08)"
-              >
-                <h1 class="display-4 text-white mb-0">
-                  10 <span class="fs-4">Years</span>
-                </h1>
-                <h4 class="text-white">Experience</h4>
-              </div> -->
+            <img class="position-absolute img-fluid w-100 h-100" src="img/general_healthcare_items.jpg"
+              style="object-fit: contain" alt="Evara Life Sciences" />
           </div>
         </div>
 
@@ -374,25 +458,16 @@
         <div class="col-lg-6">
           <h6 class="text-secondary text-uppercase">// About Us //</h6>
           <h1 class="mb-4">
-            <span class="text-secondary">ESS ENTERPRISES</span> — Experts in Wooden Flooring, False Ceilings, Carpets &
-            Vinyl Flooring.
-
+            <span class="text-secondary">EVARA LIFE SCIENCES</span> — Quality Healthcare & General Medicines
           </h1>
           <p class="mb-4">
-            ESS ENTERPRISES has been a trusted name in the interior solutions industry since 1994. With over three
-            decades of expertise, we specialize in the manufacturing, supplying, and exporting of high-quality Wooden
-            Flooring, False Ceilings, Carpets, and Vinyl Flooring.
-
-            Our commitment to quality, innovation, and customer satisfaction has positioned us as one of the most
-            reliable brands in India. Over the years, we have successfully completed numerous projects across
-            residential, commercial, and industrial spaces, transforming interiors with elegance and durability.
-
-            A testament to our excellence, ESS ENTERPRISES has been recognized as the Top Distributor for Armstrong
-            World Industries for 3 consecutive years in India. This prestigious achievement reflects our dedication to
-            delivering world-class products and services.
-
-            Driven by our vision to provide superior flooring and ceiling solutions, we continue to expand our reach
-            globally, ensuring every project we undertake reflects our values of quality, trust, and craftsmanship.
+            EVARA LIFE SCIENCES is a leading provider of healthcare and pharmaceutical products. We specialize in
+            manufacturing and supplying general medicines, medical consumables, and essential hospital supplies.
+          </p>
+          <p class="mb-4">
+            With a strong network and a focus on quality, we serve healthcare institutions across India and beyond —
+            making
+            healthcare accessible, reliable, and affordable.
           </p>
 
           <div class="row g-4 mb-3 pb-3">
@@ -403,9 +478,9 @@
                   <span class="fw-bold text-secondary">01</span>
                 </div>
                 <div class="ps-3">
-                  <h6>Premium Wooden Flooring</h6>
+                  <h6>General Medicines</h6>
                   <span>
-                    Elegant and durable wooden flooring solutions that add warmth and sophistication to any space.
+                    Affordable and effective treatments for everyday health needs.
                   </span>
                 </div>
               </div>
@@ -418,9 +493,9 @@
                   <span class="fw-bold text-secondary">02</span>
                 </div>
                 <div class="ps-3">
-                  <h6>False Ceiling & Carpets</h6>
+                  <h6>Medical Consumables</h6>
                   <span>
-                    Innovative false ceiling designs and premium carpets crafted for comfort, style, and durability.
+                    Gloves, masks, syringes, and more for safe clinical practices.
                   </span>
                 </div>
               </div>
@@ -433,22 +508,19 @@
                   <span class="fw-bold text-secondary">03</span>
                 </div>
                 <div class="ps-3">
-                  <h6>Vinyl Flooring Solutions</h6>
+                  <h6>Hospital Supplies</h6>
                   <span>
-                    Modern, stylish, and easy-to-maintain vinyl flooring designed for both residential and commercial
-                    spaces.
+                    Reliable tools and products for patient care and diagnostics.
                   </span>
                 </div>
               </div>
             </div>
           </div>
 
-
-          <button href="contact.php" class="btn border border-pill  bg-primary text-white py-3 px-5">
-            Read More<i class="fa fa-arrow-right ms-3"></i>
-          </button>
+          <a href="contact.php" class="btn border border-pill bg-primary text-white py-3 px-5">
+            Read More <i class="fa fa-arrow-right ms-3"></i>
+          </a>
         </div>
-
       </div>
     </div>
   </div>
@@ -459,71 +531,187 @@
     <h1 class="text-center mb-5">Our Products</h1>
     <div class="row g-4 justify-content-center">
 
-      <!-- Card 1: Tender Coconut -->
-      <div class="col-sm-6 col-md-4 col-lg-4">
-        <div class="card h-100 text-center">
-          <img src="img/vinlycard'.jpg" class="card-img-top img-fluid" alt="Tender Coconut"
-            style="height: 250px; object-fit: cover" />
+      <!-- Patent / Branded Medicines -->
+      <h3 class="mb-4 text-center w-100">Patent / Branded Medicines</h3>
+
+      <div class="col-sm-6 col-md-4 col-lg-3">
+        <div class="card h-100 text-center shadow-sm border-0">
+          <img src="img/Lipitor.jpg"  height="auto" width="100%" style="object-fit: contain;" class="card-img-top" alt="Lipitor">
           <div class="card-body">
-            <h5 class="card-title">Vinly Flooring</h5>
-            <p class="card-text">Modern Durability</p>
-            <div class="d-flex flex-column flex-sm-row justify-content-center gap-2">
-              <a href="#" data-bs-toggle="modal" data-bs-target="#enquiryModal" class="btn border border-pill  text-secondary enquiry-btn border border-pill " data-product="Tender Coconut">Enquiry</a>
-              <a href="vinly.php" class="btn border border-pill  btn border border-pill -outline-primary">Details</a>
-            </div>
+            <h5 class="card-title">Lipitor (Atorvastatin)</h5>
+            <a href="#" class="btn btn-outline-primary border-pill">Details</a>
           </div>
         </div>
       </div>
 
-      <!-- Card 2: Clay Pot -->
-      <div class="col-sm-6 col-md-4 col-lg-4">
-        <div class="card h-100 text-center">
-          <img src="img/carpetcard.jpg" class="card-img-top img-fluid" alt="Clay Pot"
-            style="height: 250px; object-fit: cover" />
+      <div class="col-sm-6 col-md-4 col-lg-3">
+        <div class="card h-100 text-center shadow-sm border-0">
+          <img src="img/Humira.avif"  height="auto" width="100%"  style="object-fit: contain;" class="card-img-top" alt="Humira">
           <div class="card-body">
-            <h5 class="card-title">Carpets</h5>
-            <p class="card-text">Elegant Comfort</p>
-            <div class="d-flex flex-column flex-sm-row justify-content-center gap-2">
-              <a href="#" data-bs-toggle="modal" data-bs-target="#enquiryModal" class="btn border border-pill  text-secondary enquiry-btn border border-pill " data-product="Clay Pot">Enquiry</a>
-              <a href="carpet.php" class="btn border border-pill  btn border border-pill -outline-primary">Details</a>
-            </div>
+            <h5 class="card-title">Humira (Adalimumab)</h5>
+            <a href="#" class="btn btn-outline-primary border-pill">Details</a>
           </div>
         </div>
       </div>
 
-      <!-- Card 3: God Statue -->
-      <div class="col-sm-6 col-md-4 col-lg-4">
-        <div class="card h-100 text-center">
-          <img src="img/falsefloor.jpg" class="card-img-top img-fluid" alt="God Statue"
-            style="height: 250px; object-fit: cover" />
+      <div class="col-sm-6 col-md-4 col-lg-3">
+        <div class="card h-100 text-center shadow-sm border-0">
+          <img src="img/Keytruda.avif"  height="auto" width="100%"  style="object-fit: contain;" class="card-img-top" alt="Keytruda">
           <div class="card-body">
-            <h5 class="card-title">False Flooring</h5>
-            <p class="card-text">Smart Access</p>
-            <div class="d-flex flex-column flex-sm-row justify-content-center gap-2">
-              <a href="#" data-bs-toggle="modal" data-bs-target="#enquiryModal" class="btn border border-pill  text-secondary enquiry-btn border border-pill " data-product="God Statue">Enquiry</a>
-              <a href="falseflooring.php" class="btn border border-pill  btn border border-pill -outline-primary">Details</a>
-            </div>
+            <h5 class="card-title">Keytruda (Pembrolizumab)</h5>
+            <a href="#" class="btn btn-outline-primary border-pill">Details</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-6 col-md-4 col-lg-3">
+        <div class="card h-100 text-center shadow-sm border-0">
+          <img src="img/Januvia.jpg"  height="auto" width="100%"  style="object-fit: contain;" class="card-img-top" alt="Januvia">
+          <div class="card-body">
+            <h5 class="card-title">Januvia (Sitagliptin)</h5>
+            <a href="#" class="btn btn-outline-primary border-pill">Details</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-6 col-md-4 col-lg-3">
+        <div class="card h-100 text-center shadow-sm border-0">
+          <img src="img/Entresto.webp"  height="auto" width="100%" class="card-img-top" alt="Entresto">
+          <div class="card-body">
+            <h5 class="card-title">Entresto (Sacubitril/Valsartan)</h5>
+            <a href="#" class="btn btn-outline-primary border-pill">Details</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- OTC Products -->
+      <h3 class="mb-4 mt-5 text-center w-100">OTC Products</h3>
+
+      <div class="col-sm-6 col-md-4 col-lg-3">
+        <div class="card h-100 text-center shadow-sm border-0">
+          <img src="img/Panadol_Tylenol.png"  height="auto" width="100%"  style="object-fit: contain;" class="card-img-top" alt="Panadol / Tylenol">
+          <div class="card-body">
+            <h5 class="card-title">Panadol / Tylenol</h5>
+            <a href="#" class="btn btn-outline-primary border-pill">Details</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-6 col-md-4 col-lg-3">
+        <div class="card h-100 text-center shadow-sm border-0">
+          <img src="img/Vicks.webp"  height="auto" width="100%"  style="object-fit: contain;" class="card-img-top" alt="Vicks">
+          <div class="card-body">
+            <h5 class="card-title">Vicks</h5>
+            <a href="#" class="btn btn-outline-primary border-pill">Details</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-6 col-md-4 col-lg-3">
+        <div class="card h-100 text-center shadow-sm border-0">
+          <img src="img/Centrum_Supradyn.jpg"  height="auto" width="100%"  style="object-fit: contain;" class="card-img-top" alt="Centrum / Supradyn">
+          <div class="card-body">
+            <h5 class="card-title">Centrum / Supradyn</h5>
+            <a href="#" class="btn btn-outline-primary border-pill">Details</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-6 col-md-4 col-lg-3">
+        <div class="card h-100 text-center shadow-sm border-0">
+          <img src="img/Vitamin_Zinc.webp"  height="auto" width="100%" style="object-fit: contain;"  class="card-img-top" alt="Vitamin C / D3 / Zinc">
+          <div class="card-body">
+            <h5 class="card-title">Vitamin C / D3 / Zinc</h5>
+            <a href="#" class="btn btn-outline-primary border-pill">Details</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-6 col-md-4 col-lg-3">
+        <div class="card h-100 text-center shadow-sm border-0">
+          <img src="img/ORS.jpg"  height="auto" width="100%" style="object-fit: contain;"  class="card-img-top" alt="ORS">
+          <div class="card-body">
+            <h5 class="card-title">ORS</h5>
+            <a href="#" class="btn btn-outline-primary border-pill">Details</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-6 col-md-4 col-lg-3">
+        <div class="card h-100 text-center shadow-sm border-0">
+          <img src="img/Nicotex_Nicorette.webp"  height="auto" width="100%" style="object-fit: contain;"  class="card-img-top" alt="Nicotex / Nicorette">
+          <div class="card-body">
+            <h5 class="card-title">Nicotex / Nicorette</h5>
+            <a href="#" class="btn btn-outline-primary border-pill">Details</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- General Healthcare Items -->
+      <h3 class="mb-4 mt-5 text-center w-100">General Healthcare Items</h3>
+
+      <div class="col-sm-6 col-md-4 col-lg-3">
+        <div class="card h-100 text-center shadow-sm border-0">
+          <img src="img/Thermometers.jpg"  height="auto" width="100%" style="object-fit: contain;"  class="card-img-top" alt="Thermometers">
+          <div class="card-body">
+            <h5 class="card-title">Thermometers</h5>
+            <a href="#" class="btn btn-outline-primary border-pill">Details</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-6 col-md-4 col-lg-3">
+        <div class="card h-100 text-center shadow-sm border-0">
+          <img src="img/First_aid_Kits.jpg"  height="auto" width="100%" style="object-fit: contain;"  class="card-img-top" alt="First-aid Kits">
+          <div class="card-body">
+            <h5 class="card-title">First-aid Kits</h5>
+            <a href="#" class="btn btn-outline-primary border-pill">Details</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-6 col-md-4 col-lg-3">
+        <div class="card h-100 text-center shadow-sm border-0">
+          <img src="img/Bandages_Cotton.webp"  height="auto" width="100%" style="object-fit: contain;"  class="card-img-top" alt="Bandages / Gauze / Cotton">
+          <div class="card-body">
+            <h5 class="card-title">Bandages / Gauze / Cotton</h5>
+            <a href="#" class="btn btn-outline-primary border-pill">Details</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-6 col-md-4 col-lg-3">
+        <div class="card h-100 text-center shadow-sm border-0">
+          <img src="img/Sanitizers_Disinfectants.jpg"  height="auto" width="100%" style="object-fit: contain;"  class="card-img-top" alt="Sanitizers / Disinfectants">
+          <div class="card-body">
+            <h5 class="card-title">Sanitizers / Disinfectants</h5>
+            <a href="#" class="btn btn-outline-primary border-pill">Details</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-6 col-md-4 col-lg-3">
+        <div class="card h-100 text-center shadow-sm border-0">
+          <img src="img/Surgical_Gloves_Face_Masks.jpg"  height="auto" width="100%" style="object-fit: contain;"  class="card-img-top" alt="Surgical Gloves / Face Masks">
+          <div class="card-body">
+            <h5 class="card-title">Surgical Gloves / Face Masks</h5>
+            <a href="#" class="btn btn-outline-primary border-pill">Details</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-6 col-md-4 col-lg-3">
+        <div class="card h-100 text-center shadow-sm border-0">
+          <img src="img/BP_Monitors_Glucometers.webp"  height="auto" width="100%" style="object-fit: contain;"  class="card-img-top" alt="BP Monitors / Glucometers">
+          <div class="card-body">
+            <h5 class="card-title">BP Monitors / Glucometers</h5>
+            <a href="#" class="btn btn-outline-primary border-pill">Details</a>
           </div>
         </div>
       </div>
 
     </div>
   </div>
-
-  <!-- Responsive image adjustments -->
-  <style>
-    @media (max-width: 576px) {
-      .card-img-top {
-        height: 200px !important;
-      }
-    }
-
-    @media (max-width: 768px) {
-      .card-img-top {
-        height: 220px !important;
-      }
-    }
-  </style>
   <!-- Products  Section End -->
 
   <!-- Service Start -->
@@ -535,36 +723,30 @@
       </div>
       <div class="row g-4 wow fadeInUp" data-wow-delay="0.3s">
         <div class="col-lg-4">
-          <div class="nav w-100 nav-pills me-4">
+          <div class="nav w-100 nav-pills me-4 flex-column">
             <!-- Tab 1 -->
             <button class="nav-link w-100 d-flex align-items-center text-start p-4 mb-4 active" data-bs-toggle="pill"
               data-bs-target="#tab-pane-1" type="button">
-              <i class="fa fa-th-large fa-2x me-3"></i>
-              <h4 class="m-0">Vinyl Flooring</h4>
+              <i class="fa fa-pills fa-2x me-3"></i>
+              <h4 class="m-0">Patent Medicines</h4>
             </button>
             <!-- Tab 2 -->
             <button class="nav-link w-100 d-flex align-items-center text-start p-4 mb-4" data-bs-toggle="pill"
               data-bs-target="#tab-pane-2" type="button">
-              <i class="fa fa-border-style fa-2x me-3"></i>
-              <h4 class="m-0">Carpets</h4>
+              <i class="fa fa-capsules fa-2x me-3"></i>
+              <h4 class="m-0">OTC Products</h4>
             </button>
             <!-- Tab 3 -->
             <button class="nav-link w-100 d-flex align-items-center text-start p-4 mb-4" data-bs-toggle="pill"
               data-bs-target="#tab-pane-3" type="button">
-              <i class="fa fa-cubes fa-2x me-3"></i>
-              <h4 class="m-0">False Flooring</h4>
+              <i class="fa fa-heartbeat fa-2x me-3"></i>
+              <h4 class="m-0">Healthcare Items</h4>
             </button>
             <!-- Tab 4 -->
-            <button class="nav-link w-100 d-flex align-items-center text-start p-4 mb-4" data-bs-toggle="pill"
-              data-bs-target="#tab-pane-4" type="button">
-              <i class="fa fa-border-all fa-2x me-3"></i>
-              <h4 class="m-0">False Ceiling</h4>
-            </button>
-            <!-- Tab 5 -->
             <button class="nav-link w-100 d-flex align-items-center text-start p-4 mb-0" data-bs-toggle="pill"
-              data-bs-target="#tab-pane-5" type="button">
-              <i class="fa fa-tree fa-2x me-3"></i>
-              <h4 class="m-0">Wooden Flooring</h4>
+              data-bs-target="#tab-pane-4" type="button">
+              <i class="fa fa-truck fa-2x me-3"></i>
+              <h4 class="m-0">Reliable Delivery</h4>
             </button>
           </div>
         </div>
@@ -572,121 +754,106 @@
         <div class="col-lg-8">
           <div class="tab-content w-100">
 
-            <!-- Tab 1: Vinyl Flooring -->
+            <!-- Tab 1: Patent Medicines -->
             <div class="tab-pane fade show active" id="tab-pane-1">
               <div class="row g-4">
                 <div class="col-md-6" style="min-height: 350px">
                   <div class="position-relative h-100">
-                    <img class="position-absolute img-fluid w-100 h-100" src="img/vinlyflooringservice.jpg"
-                      style="object-fit: cover" alt="Vinyl Flooring" />
+                    <img class="position-absolute img-fluid" height="auto" width="100%"
+                      src="img/patent_branded_medicine.jpg" style="object-fit: cover" alt="Patent Medicines" />
                   </div>
                 </div>
                 <div class="col-md-6">
-                  <h3 class="mb-3">Vinyl Flooring</h3>
+                  <h3 class="mb-3">Patent Medicines</h3>
                   <p class="mb-4">
-                    Durable, stylish, and cost-effective vinyl flooring — perfect for modern homes and commercial
-                    spaces.
+                    We supply a wide range of genuine patent medicines trusted by healthcare professionals for their
+                    quality and efficacy.
                   </p>
-                  <p><i class="fa fa-check text-success me-3"></i>Water-Resistant</p>
-                  <p><i class="fa fa-check text-success me-3"></i>Easy to Maintain</p>
-                  <p><i class="fa fa-check text-success me-3"></i>Available in Multiple Designs</p>
-                  <a href="contact.php" class="btn border border-pill  text-secondary py-3 px-5 mt-3">
+                  <ul class="list-unstyled">
+                    <li><i class="fa fa-check text-success me-3"></i>Certified & Authentic</li>
+                    <li><i class="fa fa-check text-success me-3"></i>Wide Variety</li>
+                    <li><i class="fa fa-check text-success me-3"></i>Competitive Pricing</li>
+                  </ul>
+                  <a href="contact.php" class="btn border border-pill text-secondary py-3 px-5 mt-3">
                     Read More<i class="fa fa-arrow-right ms-3"></i>
                   </a>
                 </div>
               </div>
             </div>
 
-            <!-- Tab 2: Carpets -->
+            <!-- Tab 2: OTC Products -->
             <div class="tab-pane fade" id="tab-pane-2">
               <div class="row g-4">
                 <div class="col-md-6" style="min-height: 350px">
                   <div class="position-relative h-100">
-                    <img class="position-absolute img-fluid w-100 h-100" src="img/carpetservice.jpg"
-                      style="object-fit: cover" alt="Carpets" />
+                    <img class="position-absolute img-fluid " height="auto" width="100%" src="img/otc_products.png"
+                      style="object-fit: cover" alt="OTC Products" />
                   </div>
                 </div>
                 <div class="col-md-6">
-                  <h3 class="mb-3">Carpets</h3>
+                  <h3 class="mb-3">OTC Products</h3>
                   <p class="mb-4">
-                    Elegant and comfortable carpets that add luxury, warmth, and style to any interior.
+                    Offering a variety of over-the-counter products to meet everyday health and wellness needs for
+                    consumers.
                   </p>
-                  <p><i class="fa fa-check text-success me-3"></i>Soft & Durable</p>
-                  <p><i class="fa fa-check text-success me-3"></i>Variety of Patterns</p>
-                  <p><i class="fa fa-check text-success me-3"></i>Perfect for Homes & Offices</p>
-                  <a href="contact.php" class="btn border border-pill  text-secondary py-3 px-5 mt-3">
+                  <ul class="list-unstyled">
+                    <li><i class="fa fa-check text-success me-3"></i>Trusted Brands</li>
+                    <li><i class="fa fa-check text-success me-3"></i>Quality Assurance</li>
+                    <li><i class="fa fa-check text-success me-3"></i>Affordable Options</li>
+                  </ul>
+                  <a href="contact.php" class="btn border border-pill text-secondary py-3 px-5 mt-3">
                     Read More<i class="fa fa-arrow-right ms-3"></i>
                   </a>
                 </div>
               </div>
             </div>
 
-            <!-- Tab 3: False Flooring -->
+            <!-- Tab 3: Healthcare Items -->
             <div class="tab-pane fade" id="tab-pane-3">
               <div class="row g-4">
                 <div class="col-md-6" style="min-height: 350px">
                   <div class="position-relative h-100">
-                    <img class="position-absolute img-fluid w-100 h-100" src="img/falsefloorcard.jpg"
-                      style="object-fit: cover" alt="False Flooring" />
+                    <img class="position-absolute img-fluid " height="auto" width="100%"
+                      src="img/general_healthcare_items.jpg" style="object-fit: cover" alt="Healthcare Items" />
                   </div>
                 </div>
                 <div class="col-md-6">
-                  <h3 class="mb-3">False Flooring</h3>
+                  <h3 class="mb-3">Healthcare Items</h3>
                   <p class="mb-4">
-                    Smart and functional false flooring solutions designed for easy access and modern infrastructure.
+                    We distribute general healthcare items that support wellbeing and promote a healthy lifestyle.
                   </p>
-                  <p><i class="fa fa-check text-success me-3"></i>Strong & Reliable</p>
-                  <p><i class="fa fa-check text-success me-3"></i>Convenient Maintenance Access</p>
-                  <p><i class="fa fa-check text-success me-3"></i>Ideal for Offices & IT Spaces</p>
-                  <a href="contact.php" class="btn border border-pill  text-secondary py-3 px-5 mt-3">
+                  <ul class="list-unstyled">
+                    <li><i class="fa fa-check text-success me-3"></i>Wide Product Range</li>
+                    <li><i class="fa fa-check text-success me-3"></i>Reliable Suppliers</li>
+                    <li><i class="fa fa-check text-success me-3"></i>Consistent Quality</li>
+                  </ul>
+                  <a href="contact.php" class="btn border border-pill text-secondary py-3 px-5 mt-3">
                     Read More<i class="fa fa-arrow-right ms-3"></i>
                   </a>
                 </div>
               </div>
             </div>
 
-            <!-- Tab 4: False Ceiling -->
+            <!-- Tab 4: Reliable Delivery -->
             <div class="tab-pane fade" id="tab-pane-4">
               <div class="row g-4">
                 <div class="col-md-6" style="min-height: 350px">
                   <div class="position-relative h-100">
-                    <img class="position-absolute img-fluid w-100 h-100" src="img/falseceiling.jpg"
-                      style="object-fit: cover" alt="False Ceiling" />
+                    <img class="position-absolute img-fluid " height="auto" width="100%" src="img/mission.jpg"
+                      style="object-fit: cover" alt="Reliable Delivery" />
                   </div>
                 </div>
                 <div class="col-md-6">
-                  <h3 class="mb-3">False Ceiling</h3>
+                  <h3 class="mb-3">Reliable Delivery</h3>
                   <p class="mb-4">
-                    Stylish and modern false ceiling designs that enhance aesthetics, insulation, and lighting.
+                    We ensure timely and dependable delivery to keep your business stocked and running smoothly.
                   </p>
-                  <p><i class="fa fa-check text-success me-3"></i>Acoustic & Thermal Benefits</p>
-                  <p><i class="fa fa-check text-success me-3"></i>Wide Design Choices</p>
-                  <p><i class="fa fa-check text-success me-3"></i>Perfect for Homes & Offices</p>
-                  <a href="contact.php" class="btn border border-pill  text-secondary py-3 px-5 mt-3">
-                    Read More<i class="fa fa-arrow-right ms-3"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
-
-            <!-- Tab 5: Wooden Flooring -->
-            <div class="tab-pane fade" id="tab-pane-5">
-              <div class="row g-4">
-                <div class="col-md-6" style="min-height: 350px">
-                  <div class="position-relative h-100">
-                    <img class="position-absolute img-fluid w-100 h-100" src="img/woodenfloor.jpg"
-                      style="object-fit: cover" alt="Wooden Flooring" />
-                  </div>
-                </div>
-                <div class="col-md-6">
-                  <h3 class="mb-3">Wooden Flooring</h3>
-                  <p class="mb-4">
-                    Premium wooden flooring crafted for timeless elegance, durability, and natural warmth.
-                  </p>
-                  <p><i class="fa fa-check text-success me-3"></i>Elegant & Durable</p>
-                  <p><i class="fa fa-check text-success me-3"></i>Easy to Maintain</p>
-                  <p><i class="fa fa-check text-success me-3"></i>Enhances Interiors</p>
-                  <a href="contact.php" class="btn border border-pill  text-secondary py-3 px-5 mt-3">
+                  <ul class="list-unstyled">
+                    <li><i class="fa fa-check text-success me-3"></i>On-Time Shipments</li>
+                    <li><i class="fa fa-check text-success me-3"></i>Safe Packaging</li>
+                    <li><i class="fa fa-check text-success me-3"></i>Wide Coverage</li>
+                  </ul>
+                  <a href="contact.php" class="btn border border-pill text-secondary py-3 px-5 mt-3">
                     Read More<i class="fa fa-arrow-right ms-3"></i>
                   </a>
                 </div>
@@ -699,127 +866,6 @@
     </div>
   </div>
   <!-- Service End -->
-
-  <!-- collection -->
-  <div class="container-xxl py-5">
-    <div class="container">
-      <div class="text-center mb-5">
-        <h6 class="text-secondary text-uppercase">// Our Collection //</h6>
-        <h1>Explore Our Premium Solutions</h1>
-      </div>
-
-      <div class="row g-4 justify-content-center">
-        <!-- Card 1 -->
-        <div class="col-lg-4 col-md-6">
-          <div class="card h-100 text-center">
-            <img src="img/woodenfloor.jpg" class="card-img-top" alt="Wooden Flooring"
-              style="object-fit: cover; height: 250px;" />
-            <div class="card-body">
-              <h5 class="card-title">Wooden Flooring</h5>
-              <p>Elegant and durable wooden flooring that adds warmth, style, and timeless beauty to any space.</p>
-              <a href="#" data-bs-toggle="modal" data-bs-target="#enquiryModal" class="btn border border-pill  text-secondary me-2">ENQUIRY</a>
-            </div>
-          </div>
-        </div>
-
-        <!-- Card 2 -->
-        <div class="col-lg-4 col-md-6">
-          <div class="card h-100 text-center">
-            <img src="img/falseceiling.jpg" class="card-img-top" alt="False Ceiling"
-              style="object-fit: cover; height: 250px;" />
-            <div class="card-body">
-              <h5 class="card-title">False Ceiling</h5>
-              <p>Stylish and functional false ceilings designed to enhance aesthetics while improving insulation.</p>
-              <a href="#" data-bs-toggle="modal" data-bs-target="#enquiryModal" class="btn border border-pill  text-secondary me-2">ENQUIRY</a>
-            </div>
-          </div>
-        </div>
-
-        <!-- Card 3 -->
-        <div class="col-lg-4 col-md-6">
-          <div class="card h-100 text-center">
-            <img src="img/carpetcard.jpg" class="card-img-top" alt="Carpets"
-              style="object-fit: cover; height: 250px;" />
-            <div class="card-body">
-              <h5 class="card-title">Carpets</h5>
-              <p>Premium carpets that combine comfort and elegance to create a luxurious flooring experience.</p>
-              <a href="#" data-bs-toggle="modal" data-bs-target="#enquiryModal" class="btn border border-pill  text-secondary me-2">ENQUIRY</a>
-            </div>
-          </div>
-        </div>
-
-        <!-- Card 4 -->
-        <div class="col-lg-4 col-md-6">
-          <div class="card h-100 text-center">
-            <img src="img/vinlycard'.jpg" class="card-img-top" alt="Vinyl Flooring"
-              style="object-fit: cover; height: 250px;" />
-            <div class="card-body">
-              <h5 class="card-title">Vinyl Flooring</h5>
-              <p>Durable and versatile vinyl flooring that offers modern style with long-lasting performance.</p>
-              <a href="#" data-bs-toggle="modal" data-bs-target="#enquiryModal" class="btn border border-pill  text-secondary me-2">ENQUIRY</a>
-            </div>
-          </div>
-        </div>
-
-        <!-- Card 5 -->
-        <div class="col-lg-4 col-md-6">
-          <div class="card h-100 text-center">
-            <img src="img/falsefloor.jpg" class="card-img-top" alt="False Flooring"
-              style="object-fit: cover; height: 250px;" />
-            <div class="card-body">
-              <h5 class="card-title">False Flooring</h5>
-              <p>Smart access false flooring solutions designed for modern offices and data centers.</p>
-              <a href="#" data-bs-toggle="modal" data-bs-target="#enquiryModal" class="btn border border-pill  text-secondary me-2">ENQUIRY</a>
-            </div>
-          </div>
-        </div>
-
-        <!-- Card 6 -->
-        <div class="col-lg-4 col-md-6">
-          <div class="card h-100 text-center">
-            <img src="img/vinlyflooringservice.jpg" class="card-img-top" alt="Interior Solutions"
-              style="object-fit: cover; height: 250px;" />
-            <div class="card-body">
-              <h5 class="card-title">Vinly Flooring</h5>
-              <p>Complete interior solutions tailored to transform spaces with style, comfort, and functionality.</p>
-              <a href="#" data-bs-toggle="modal" data-bs-target="#enquiryModal" class="btn border border-pill  text-secondary me-2">ENQUIRY</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- Collection end  -->
-
-  <!-- jQuery and Owl Carousel -->
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js">
-  </script>
-
-  <script>
-    $(function() {
-      var $owl = $('.testimonial-carousel');
-
-      $owl.owlCarousel({
-        items: 1,
-        loop: true,
-        autoplay: true,
-        autoplayTimeout: 4000,
-        smartSpeed: 800,
-        dots: false,
-        nav: false
-      });
-
-      // Custom nav
-      $('.owl-prev-custom').on('click', function() {
-        $owl.trigger('prev.owl.carousel');
-      });
-      $('.owl-next-custom').on('click', function() {
-        $owl.trigger('next.owl.carousel');
-      });
-    });
-  </script>
-  <!-- Testimonial End -->
 
   <!-- Contact Start -->
   <div class="container-xxl py-5">
@@ -850,7 +896,7 @@
         </div>
         <div class="col-md-6 wow fadeIn" data-wow-delay="0.1s">
           <iframe class="position-relative rounded w-100 h-100"
-            src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d28050.833890166876!2d77.29319042882383!3d28.498988162847855!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sG%2FF%20D%20-19%20Gali%20Number%20Molarband%20%2CNew%20Delhi%20-44!5e0!3m2!1sen!2sin!4v1754907088221!5m2!1sen!2sin"
+            src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d224107.8079012388!2d77.19233600549657!3d28.639216539542225!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1s%20PLOT%20NO.338A%2CWARD%20NO.4%2CGARHI%20MARKET%2CDELHI%20MERRUT%20ROAD%2CGHAZIABAD%20UTTAR%20PRADESH%20INDIA%20201001%20!5e0!3m2!1sen!2sin!4v1760355620831!5m2!1sen!2sin"
             frameborder="0" style="min-height: 350px; border: 0" allowfullscreen="" aria-hidden="false"
             tabindex="0"></iframe>
         </div>
@@ -897,100 +943,115 @@
   </div>
   <!-- Contact End -->
 
-  <!-- footer -->
-
-<!-- Footer Start -->
-<div class="container-fluid bg-dark text-light footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
+  <!-- Footer Start -->
+  <div class="container-fluid bg-primary text-light footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
     <div class="container py-5">
-        <div class="row g-5">
-            <div class="col-lg-3 col-md-6">
-                <h4 class="text-light mb-4">Address</h4>
-                <p class="mb-2">
-                    <i class="fa fa-map-marker-alt me-3"></i>13,2, RANGAPPA REDDY COMPLEX
-                    1ST CROSS, R.V.ROAD BENGALURU
-                    KARNATAKA
-                    INDIA-560004
+      <div class="row g-5">
 
-                </p>
-                <p class="mb-2">
-                    <i class="fa fa-phone-alt me-3"></i>+91 8042048479, 98455 18383
-                </p>
-                <!-- <p class="mb-2"><i class="fa fa-envelope me-3"></i>sunilk3143@gmail.com</p> -->
-                <div class="d-flex pt-2">
-                    <a class="btn border border-pill  btn border border-pill -outline-light btn border border-pill -social" href=""><i class="fab fa-twitter"></i></a>
-                    <a class="btn border border-pill  btn border border-pill -outline-light btn border border-pill -social" href=""><i class="fab fa-facebook-f"></i></a>
-                    <a class="btn border border-pill  btn border border-pill -outline-light btn border border-pill -social" href=""><i class="fab fa-youtube"></i></a>
-                    <a class="btn border border-pill  btn border border-pill -outline-light btn border border-pill -social" href=""><i class="fab fa-linkedin-in"></i></a>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6">
-                <h4 class="text-light mb-4">Opening Hours</h4>
-                <h6 class="text-light">Monday - Friday:</h6>
-                <p class="mb-4">09.00 AM - 09.00 PM</p>
-                <h6 class="text-light">Saturday - Sunday:</h6>
-                <p class="mb-0">09.00 AM - 12.00 PM</p>
-            </div>
-            <div class="col-lg-3 col-md-6">
-                <h4 class="text-light mb-4">Services</h4>
-                <a class="btn border border-pill  btn border border-pill -link" href="">Home</a>
-                <a class="btn border border-pill  btn border border-pill -link" href="">About </a>
-                <a class="btn border border-pill  btn border border-pill -link" href="">Contact</a>
-                <a class="btn border border-pill  btn border border-pill -link" href="">Services </a>
-            </div>
-            <div class="col-lg-3 col-md-6">
-                <h4 class="text-light mb-4">Newsletter</h4>
-                <p>
-                    Subscribe to our newsletter and be the first to know about new
-                    carpet collections.
-                </p>
-                <div class="position-relative mx-auto" style="max-width: 400px">
-                    <input class="form-control border-0 w-100 py-3 ps-4 pe-5" type="text" placeholder="Your email" />
-                    <button type="button" class="btn border border-pill  text-secondary py-2 position-absolute top-0 end-0 mt-2 me-2">
-                        SignUp
-                    </button>
-                </div>
-            </div>
+        <!-- Contact Info -->
+        <div class="col-lg-3 col-md-6">
+          <h4 class="text-light mb-4">Contact Us</h4>
+          <p class="mb-2">
+            <i class="fa fa-phone-alt me-3"></i> +91 9289451501
+          </p>
+          <p class="mb-2">
+            <i class="fa fa-map-marker-alt me-3"></i>
+            Plot No.338A, Ward No.4,<br />
+            Garhi Market, Delhi Merrut Road,<br />
+            Ghaziabad, Uttar Pradesh,<br />
+            India - 201001
+          </p>
+          <div class="d-flex pt-3">
+            <a class="btn btn-outline-light btn-social rounded-circle me-2" href="#"><i class="fab fa-twitter"></i></a>
+            <a class="btn btn-outline-light btn-social rounded-circle me-2" href="#"><i
+                class="fab fa-facebook-f"></i></a>
+            <a class="btn btn-outline-light btn-social rounded-circle me-2" href="#"><i class="fab fa-youtube"></i></a>
+            <a class="btn btn-outline-light btn-social rounded-circle me-2" href="#"><i
+                class="fab fa-linkedin-in"></i></a>
+          </div>
         </div>
+
+        <!-- Quick Links -->
+        <div class="col-lg-3 col-md-6">
+          <h4 class="text-light mb-4">Quick Links</h4>
+          <a class="btn btn-link text-light" href="index.php">Home</a><br />
+          <a class="btn btn-link text-light" href="about.php">About Us</a><br />
+          <a class="btn btn-link text-light" href="services.php">Services</a><br />
+          <a class="btn btn-link text-light" href="contact.php">Contact</a><br />
+          <a class="btn btn-link text-light" href="privacy.php">Privacy Policy</a><br />
+          <a class="btn btn-link text-light" href="terms.php">Terms & Conditions</a>
+        </div>
+
+        <!-- Our Services -->
+        <div class="col-lg-3 col-md-6">
+          <h4 class="text-light mb-4">Our Services</h4>
+          <p>Patent Medicines Distribution</p>
+          <p>Over-the-Counter (OTC) Products</p>
+          <p>General Healthcare Items</p>
+          <p>Reliable Delivery & Logistics</p>
+        </div>
+
+        <!-- Newsletter -->
+        <div class="col-lg-3 col-md-6">
+          <h4 class="text-light mb-4">Newsletter</h4>
+          <p>Subscribe to our newsletter to get the latest updates and offers.</p>
+          <div class="position-relative mx-auto" style="max-width: 400px;">
+            <input class="form-control border-0 w-100 py-3 ps-4 pe-5" type="email" placeholder="Your email"
+              aria-label="Email for newsletter" />
+            <button type="button" class="btn btn-outline-light py-2 position-absolute top-0 end-0 mt-2 me-2">
+              Sign Up
+            </button>
+          </div>
+        </div>
+
+      </div>
     </div>
+
+    <!-- Copyright -->
     <div class="container">
-        <div class="copyright">
-            <div class="row">
-                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                    &copy; <a class="border-bottom" href="#">ESS ENTERPRISES/a>, All
-                        Right Reserved. Designed By
-                        <a class="border-bottom" href="https://trade4export.com">Trade4Export</a>
-                </div>
-                <div class="col-md-6 text-center text-md-end">
-                    <div class="footer-menu">
-                        <a href="">Home</a>
-                        <a href="">Cookies</a>
-                        <a href="">Help</a>
-                        <a href="">FQAs</a>
-                    </div>
-                </div>
-            </div>
+      <div class="copyright py-4 border-top border-light mt-4">
+        <div class="row">
+          <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+            &copy; 2025 <strong>EVARA LIFE SCIENCES</strong>. All Rights Reserved.<br />
+            Designed by
+            <a class="text-decoration-underline text-light" href="https://trade4export.com" target="_blank"
+              rel="noopener noreferrer">Trade4Export</a>
+          </div>
+          <div class="col-md-6 text-center text-md-end">
+            <a class="text-light me-3" href="index.php">Home</a>
+            <a class="text-light me-3" href="cookies.php">Cookies</a>
+            <a class="text-light me-3" href="help.php">Help</a>
+            <a class="text-light" href="faq.php">FAQs</a>
+          </div>
         </div>
+      </div>
     </div>
-</div>
-<!-- Footer End -->
+  </div>
+  <!-- Footer End -->
 
-<!-- Back to Top -->
-<a href="#" class="btn border border-pill  btn border border-pill -lg text-secondary btn border border-pill -lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+  <!-- Back to Top -->
+  <a href="#"
+    class="btn border border-pill  btn border border-pill -lg text-secondary btn border border-pill -lg-square back-to-top"><i
+      class="bi bi-arrow-up"></i></a>
+  <!-- Bootstrap & Font Awesome CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
-<!-- JavaScript Libraries -->
-<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-<script src="lib/wow/wow.min.js"></script>
-<script src="lib/easing/easing.min.js"></script>
-<script src="lib/waypoints/waypoints.min.js"></script>
-<script src="lib/counterup/counterup.min.js"></script>
-<script src="lib/owlcarousel/owl.carousel.min.js"></script>
-<script src="lib/tempusdominus/js/moment.min.js"></script>
-<script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
-<script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+  <!-- JavaScript Libraries -->
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="lib/wow/wow.min.js"></script>
+  <script src="lib/easing/easing.min.js"></script>
+  <script src="lib/waypoints/waypoints.min.js"></script>
+  <script src="lib/counterup/counterup.min.js"></script>
+  <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+  <script src="lib/tempusdominus/js/moment.min.js"></script>
+  <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
+  <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
 
-<!-- Template Javascript -->
-<script src="js/main.js"></script>
+  <!-- Template Javascript -->
+  <script src="js/main.js"></script>
 </body>
 
 </html>
