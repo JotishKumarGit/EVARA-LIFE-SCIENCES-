@@ -40,7 +40,7 @@
         const email = document.getElementById("email").value.trim();
         const message = document.getElementById("message").value.trim();
         // WhatsApp number (without +)
-        const phoneNumber = "918042048479"; // <-- apna number yahan daalein
+        const phoneNumber = "919289451501"; // <-- apna number yahan daalein
 
         // Create WhatsApp message
         const whatsappMessage = `Hello, my name is *${name}* (%0AEmail: ${email})%0A%0A${message}`;
@@ -63,7 +63,7 @@
         const message = document.getElementById("message").value.trim();
 
         // WhatsApp number (include country code, e.g. 91 for India)
-        const phoneNumber = "91 9891415885";
+        const phoneNumber = "919289451501";
 
         // Create WhatsApp message
         const whatsappMessage = `Name: ${name}%0AEmail: ${email}%0ASubject: ${subject}%0AMessage: ${message}`;
@@ -76,99 +76,115 @@
     });
 </script>
 
-
-<!-- Footer Start -->
-<div class="container-fluid bg-dark text-light footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
+  <!-- Footer Start -->
+  <div class="container-fluid bg-primary text-light footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
     <div class="container py-5">
-        <div class="row g-5">
-            <div class="col-lg-3 col-md-6">
-                <h4 class="text-light mb-4">Address</h4>
-                <p class="mb-2">
-                    <i class="fa fa-map-marker-alt me-3"></i>13,2, RANGAPPA REDDY COMPLEX
-                    1ST CROSS, R.V.ROAD BENGALURU
-                    KARNATAKA
-                    INDIA-560004
+      <div class="row g-5">
 
-                </p>
-                <p class="mb-2">
-                    <i class="fa fa-phone-alt me-3"></i>+91 8042048479, 98455 18383
-                </p>
-                <!-- <p class="mb-2"><i class="fa fa-envelope me-3"></i>sunilk3143@gmail.com</p> -->
-                <div class="d-flex pt-2">
-                    <a class="btn border border-pill  btn border border-pill -outline-light btn border border-pill -social" href=""><i class="fab fa-twitter"></i></a>
-                    <a class="btn border border-pill  btn border border-pill -outline-light btn border border-pill -social" href=""><i class="fab fa-facebook-f"></i></a>
-                    <a class="btn border border-pill  btn border border-pill -outline-light btn border border-pill -social" href=""><i class="fab fa-youtube"></i></a>
-                    <a class="btn border border-pill  btn border border-pill -outline-light btn border border-pill -social" href=""><i class="fab fa-linkedin-in"></i></a>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6">
-                <h4 class="text-light mb-4">Opening Hours</h4>
-                <h6 class="text-light">Monday - Friday:</h6>
-                <p class="mb-4">09.00 AM - 09.00 PM</p>
-                <h6 class="text-light">Saturday - Sunday:</h6>
-                <p class="mb-0">09.00 AM - 12.00 PM</p>
-            </div>
-            <div class="col-lg-3 col-md-6">
-                <h4 class="text-light mb-4">Services</h4>
-                <a class="btn border border-pill  btn border border-pill -link" href="">Home</a>
-                <a class="btn border border-pill  btn border border-pill -link" href="">About </a>
-                <a class="btn border border-pill  btn border border-pill -link" href="">Contact</a>
-                <a class="btn border border-pill  btn border border-pill -link" href="">Services </a>
-            </div>
-            <div class="col-lg-3 col-md-6">
-                <h4 class="text-light mb-4">Newsletter</h4>
-                <p>
-                    Subscribe to our newsletter and be the first to know about new
-                    carpet collections.
-                </p>
-                <div class="position-relative mx-auto" style="max-width: 400px">
-                    <input class="form-control border-0 w-100 py-3 ps-4 pe-5" type="text" placeholder="Your email" />
-                    <button type="button" class="btn border border-pill  text-secondary py-2 position-absolute top-0 end-0 mt-2 me-2">
-                        SignUp
-                    </button>
-                </div>
-            </div>
+        <!-- Contact Info -->
+        <div class="col-lg-3 col-md-6">
+          <h4 class="text-light mb-4">Contact Us</h4>
+          <p class="mb-2">
+            <i class="fa fa-phone-alt me-3"></i> +91 9289451501
+          </p>
+          <p class="mb-2">
+            <i class="fa fa-map-marker-alt me-3"></i>
+            Plot No.338A, Ward No.4,<br />
+            Garhi Market, Delhi Merrut Road,<br />
+            Ghaziabad, Uttar Pradesh,<br />
+            India - 201001
+          </p>
+          <div class="d-flex pt-3">
+            <a class="btn btn-outline-light btn-social rounded-circle me-2" href="#"><i class="fab fa-twitter"></i></a>
+            <a class="btn btn-outline-light btn-social rounded-circle me-2" href="#"><i
+                class="fab fa-facebook-f"></i></a>
+            <a class="btn btn-outline-light btn-social rounded-circle me-2" href="#"><i class="fab fa-youtube"></i></a>
+            <a class="btn btn-outline-light btn-social rounded-circle me-2" href="#"><i
+                class="fab fa-linkedin-in"></i></a>
+          </div>
         </div>
+
+        <!-- Quick Links -->
+        <div class="col-lg-3 col-md-6">
+          <h4 class="text-light mb-4">Quick Links</h4>
+          <a class="btn btn-link text-light" href="index.php">Home</a><br />
+          <a class="btn btn-link text-light" href="about.php">About Us</a><br />
+          <a class="btn btn-link text-light" href="services.php">Services</a><br />
+          <a class="btn btn-link text-light" href="contact.php">Contact</a><br />
+          <a class="btn btn-link text-light" href="privacy.php">Privacy Policy</a><br />
+          <a class="btn btn-link text-light" href="terms.php">Terms & Conditions</a>
+        </div>
+
+        <!-- Our Services -->
+        <div class="col-lg-3 col-md-6">
+          <h4 class="text-light mb-4">Our Services</h4>
+          <p>Patent Medicines Distribution</p>
+          <p>Over-the-Counter (OTC) Products</p>
+          <p>General Healthcare Items</p>
+          <p>Reliable Delivery & Logistics</p>
+        </div>
+
+        <!-- Newsletter -->
+        <div class="col-lg-3 col-md-6">
+          <h4 class="text-light mb-4">Newsletter</h4>
+          <p>Subscribe to our newsletter to get the latest updates and offers.</p>
+          <div class="position-relative mx-auto" style="max-width: 400px;">
+            <input class="form-control border-0 w-100 py-3 ps-4 pe-5" type="email" placeholder="Your email"
+              aria-label="Email for newsletter" />
+            <button type="button" class="btn btn-outline-light py-2 position-absolute top-0 end-0 mt-2 me-2">
+              Sign Up
+            </button>
+          </div>
+        </div>
+
+      </div>
     </div>
+
+    <!-- Copyright -->
     <div class="container">
-        <div class="copyright">
-            <div class="row">
-                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                    &copy; <a class="border-bottom" href="#">ESS ENTERPRISES/a>, All
-                        Right Reserved. Designed By
-                        <a class="border-bottom" href="https://trade4export.com">Trade4Export</a>
-                </div>
-                <div class="col-md-6 text-center text-md-end">
-                    <div class="footer-menu">
-                        <a href="">Home</a>
-                        <a href="">Cookies</a>
-                        <a href="">Help</a>
-                        <a href="">FQAs</a>
-                    </div>
-                </div>
-            </div>
+      <div class="copyright py-4 border-top border-light mt-4">
+        <div class="row">
+          <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+            &copy; 2025 <strong>EVARA LIFE SCIENCES</strong>. All Rights Reserved.<br />
+            Designed by
+            <a class="text-decoration-underline text-light" href="https://trade4export.com" target="_blank"
+              rel="noopener noreferrer">Trade4Export</a>
+          </div>
+          <div class="col-md-6 text-center text-md-end">
+            <a class="text-light me-3" href="index.php">Home</a>
+            <a class="text-light me-3" href="cookies.php">Cookies</a>
+            <a class="text-light me-3" href="help.php">Help</a>
+            <a class="text-light" href="faq.php">FAQs</a>
+          </div>
         </div>
+      </div>
     </div>
-</div>
-<!-- Footer End -->
+  </div>
+  <!-- Footer End -->
 
-<!-- Back to Top -->
-<a href="#" class="btn border border-pill  btn border border-pill -lg text-secondary btn border border-pill -lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+  <!-- Back to Top -->
+  <a href="#"
+    class="btn border border-pill  btn border border-pill -lg text-secondary btn border border-pill -lg-square back-to-top"><i
+      class="bi bi-arrow-up"></i></a>
+  <!-- Bootstrap & Font Awesome CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
-<!-- JavaScript Libraries -->
-<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-<script src="lib/wow/wow.min.js"></script>
-<script src="lib/easing/easing.min.js"></script>
-<script src="lib/waypoints/waypoints.min.js"></script>
-<script src="lib/counterup/counterup.min.js"></script>
-<script src="lib/owlcarousel/owl.carousel.min.js"></script>
-<script src="lib/tempusdominus/js/moment.min.js"></script>
-<script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
-<script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+  <!-- JavaScript Libraries -->
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="lib/wow/wow.min.js"></script>
+  <script src="lib/easing/easing.min.js"></script>
+  <script src="lib/waypoints/waypoints.min.js"></script>
+  <script src="lib/counterup/counterup.min.js"></script>
+  <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+  <script src="lib/tempusdominus/js/moment.min.js"></script>
+  <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
+  <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
 
-<!-- Template Javascript -->
-<script src="js/main.js"></script>
+  <!-- Template Javascript -->
+  <script src="js/main.js"></script>
 </body>
 
 </html>
